@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "src/assets/img/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "src/js/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "src/style/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    { "src": "/submit", "methods": ["POST"], "dest": "/index.js" },
+    { "src": "/assets/(.*)", "dest": "/src/assets/$1" },
+    { "src": "/js/(.*)", "dest": "/src/js/$1" },
+    { "src": "/style/(.*)", "dest": "/src/style/$1" },
+    { "src": "/(.*)", "dest": "/index.js" }
+  ]
+}
