@@ -13,6 +13,9 @@ app.use(bodyParser.json());
 // Set EJS as the view engine
 app.set('view engine', 'ejs'); 
 
+app.set('views', path.join(__dirname, 'views'));
+
+
 // Set the public folder as the static folder
 app.use(express.static(path.join(__dirname, 'src')));
 
