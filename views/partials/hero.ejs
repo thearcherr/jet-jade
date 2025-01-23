@@ -1,55 +1,57 @@
-<div class="hero min-h-screen" style="background-image: url('/img/bg-img.webp');">
-    <div class="hero-overlay bg-opacity-50"></div>
-    <!-- Hero content container -->
-    <div class="hero-content grid gap-8 md:gap-16 mx-5 md:mx-10">
-      <!-- Left Section -->
-      <div class="text-neutral-content text-start max-w-md">
-        <h1 class="mb-5 text-5xl font-bold pf-font">Luxury Awaits, One Click Away.</h1>
-        <p class="mb-5">
-          Discover the world’s most stunning destinations with ease and elegance. From private villas to bespoke tours, we offer the finest in luxury travel. Your journey begins now.
-        </p>
-      </div>
-  
-      <!-- Right Section -->
-      <div class="bg-white bg-opacity-20 text-neutral-content text-start p-6 rounded-lg w-full md:w-auto">
-        <div class="grid grid-rows-3 gap-4">
-          <h1 class="text-3xl font-bold text-white pf-font text-center">Book</h1>
-          <div class="row-span-1 flex flex-col md:flex-row gap-4">
-            <select class="select select-md border-2 w-full md:w-48 text-black">
-              <option disabled selected>From</option>
-              <option>London</option>
-              <option>Singapore</option>
-              <option>Los Angeles</option>
-              <option>Tokyo</option>
-            </select>
-            <select class="select select-md border-2 w-full md:w-48 text-black">
-              <option disabled selected>To</option>
-              <option>London</option>
-              <option>Singapore</option>
-              <option>Los Angeles</option>
-              <option>Tokyo</option>
-            </select>
-          </div>
-          <div class="row-span-1 flex flex-col md:flex-row gap-4">
-            <select class="select select-md border-2 w-full md:w-48 text-black">
-              <option disabled selected>Duration</option>
-              <option>30 Days</option>
-              <option>14 days</option>
-              <option>60 Days</option>
-              <option>45 Days</option>
-            </select>
-            <select class="select select-md border-2 w-full md:w-48 text-black">
-              <option disabled selected>Adults</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-            </select>
-          </div>
-          <div class="row-span-1">
-            <button class="btn bg-black text-white rounded-0 border-0 w-full font-bold hover:bg-black">Check</button>
-          </div>
+<section class="hero min-h-screen" aria-label="Luxury travel booking section" style="background-image: url('/img/bg-img.webp');">
+  <div class="hero-overlay bg-opacity-50" aria-hidden="true"></div>
+  <!-- Hero content container -->
+  <div class="hero-content grid gap-8 md:gap-16 mx-5 md:mx-10">
+    <!-- Left Section -->
+    <div class="text-neutral-content text-start max-w-md">
+      <h1 class="mb-5 text-5xl font-bold pf-font">Luxury Awaits, One Click Away.</h1>
+      <p class="mb-5">
+        Discover the world’s most stunning destinations with ease and elegance. From private villas to bespoke tours, we offer the finest in luxury travel. Your journey begins now.
+      </p>
+    </div>
+
+    <!-- Right Section -->
+    <div class="bg-white bg-opacity-20 text-neutral-content text-start p-6 rounded-lg w-full md:w-auto" role="form" aria-label="Travel booking form">
+      <div class="grid grid-rows-3 gap-4">
+        <h2 class="text-3xl font-bold text-white pf-font text-center">Book</h2>
+        <div class="row-span-1 flex flex-col md:flex-row gap-4">
+          <select class="select select-md border-2 w-full md:w-48 text-black" aria-label="Select departure location">
+            <option disabled selected>From</option>
+            <option>London</option>
+            <option>Singapore</option>
+            <option>Los Angeles</option>
+            <option>Tokyo</option>
+          </select>
+          <select class="select select-md border-2 w-full md:w-48 text-black" aria-label="Select destination location">
+            <option disabled selected>To</option>
+            <option>London</option>
+            <option>Singapore</option>
+            <option>Los Angeles</option>
+            <option>Tokyo</option>
+          </select>
+        </div>
+        <div class="row-span-1 flex flex-col md:flex-row gap-4">
+          <select class="select select-md border-2 w-full md:w-48 text-black" aria-label="Select trip duration">
+            <option disabled selected>Duration</option>
+            <option>30 Days</option>
+            <option>14 days</option>
+            <option>60 Days</option>
+            <option>45 Days</option>
+          </select>
+          <select class="select select-md border-2 w-full md:w-48 text-black" aria-label="Select number of adults">
+            <option disabled selected>Adults</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </div>
+        <div class="row-span-1">
+          <button class="btn bg-black text-white rounded-0 border-0 w-full font-bold hover:bg-black" aria-label="Check availability">
+            Check
+          </button>
         </div>
       </div>
     </div>
   </div>
+</section>
